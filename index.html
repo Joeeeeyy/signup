@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
-   <title>Sign Up Page</title>
+   <title>Sign up</title>
 </head>
+
 <body>
    <div class="container">
-      <div class="sidebar">
+      <div id="left">
          <div class="logo">
-            <h1>Logo</h1>
+            <img src="img/image 1.png" alt="213" class="logo-img">
+            <h1 class="logo-text">Coding School</h1>
          </div>
+            <div class="logo-back">
+               <img src="https://img.freepik.com/premium-vector/hands-typing-laptop-keyboard-various-electronic-devices-symbols-programming-software-development-coding_198278-3451.jpg?w=1800" alt="">
+            </div>
       </div>
-      <div class="main">
-         <div class="intro">
-            <h4>This is not a real online service! You know you need something<br>
-            like this in your life to help you realize your deepest dreams.<br>
-            Sign up <em>now</em>to get started.</h4>
-            <br>
-            <h4>You <em>know</em> you want to.</h4>
+      <div id="right">
+         <div id="intro">
+            <p class="introduction">This is not a real online service! You know you need something like this in your
+               life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+            <p class="introduction">You <em>know</em> you want to.</p>
          </div>
-            <h2>Let's do this!</h2>
-            <form action="http://httpbin.org/post" method="post">
+         <form action="#">
+            <h3>Let's do this!</h3>
+            <div class="form-container">
                <div class="name">
-                  <label for="first_name">FIRST NAME</label>
-                  <input type="text" name="first_name" id="first_name" placeholder="Thor">
-                  <label for="last_name">LAST NAME</label>
-                  <input type="text" name="last_name" id="last_name" placeholder="Odinson" active>
+                  <label for="fname">FIRST NAME</label>
+                  <input type="text" name="fname" id="fname">
+                  <label for="lname">LAST NAME</label>
+                  <input type="text" name="lname" id="lname">
                </div>
                <div class="contact">
                   <label for="email">EMAIL</label>
                   <input type="email" name="email" id="email">
-                  <label for="phone_number">PHONE NUMBER</label>
-                  <input type="tel" name="phone_number" id="phone_number">
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" name="phone" id="phone">
                </div>
-               <div class="password">
-                  <label for="password">PASSWORD</label>
+               <div class="password-input">
+                  <label for="password">Password</label>
                   <input type="password" name="password" id="password">
-                  <p class="error">* Passwords do not match</p>
-                  <label for="confirm">CONFIRM PASSWORD</label>
-                  <input type="password" name="confirm" id="confirm">
+                  <label for="confirm">CONFIRM</label>
+                  <input type="password" name="password" id="password">
                </div>
-            </form>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <span class="login"><a href="#">Log in</a></span></p>
+            </div>
+            <input type="submit" value="Create Account">
+            <p class="login">Already have an account? <a href="#">Log in</a></p>
+         </form>
       </div>
    </div>
 </body>
+
 </html>
