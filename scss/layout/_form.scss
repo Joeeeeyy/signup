@@ -1,45 +1,52 @@
 
-   form {
-      grid-row: 2;
-      border: 1px solid #000;
-      padding: 10px;
-      margin: 0;
-      box-shadow: inset hsla(0%, 0%, 0%, 0.5);
-      display: inline-grid;
-      grid-template-rows: repeat(2, 1fr);
+h3 {
+   grid-row: 1;
+}
 
-      h3 {
-         grid-row: 1;
-      }
+form {
+   grid-row: 2;
+   border: 1px solid #000;
+   padding: 10px;
+   margin: 0;
+   display: grid;
+   grid-template-rows: auto;
+   grid-template-columns: repeat(2, 1fr);
 
-      .form-container {
-         grid-row: 2;
-         display: inline-grid;
-         grid-template-rows: repeat(6, 1fr);
-         grid-template-columns: repeat(2, 1fr);
-
-         #fname {
-            grid-column: 1;
-         }
-
-         #lname {
-            grid-column: -1;
-         }
-
-         #email {
-            grid-column: 1;
-         }
-
-         #phone {
-            grid-column: -1;
-         }
-
-         #password {
-            grid-column: 1;
-         }
-
-         #confirm {
-            grid-column: -1;
-         }
-      }
+   .first,
+   #fname {
+      grid-column: 1;
    }
+}
+
+
+      // .form-container {
+      //    grid-row: 2;
+      //    display: inline-grid;
+      //    grid-template-rows: repeat(6, 1fr);
+      //    grid-template-columns: repeat(2, 1fr);
+
+      //    #fname {
+      //       grid-column: 1;
+      //    }
+
+      //    #lname {
+      //       grid-column: -1;
+      //    }
+
+      //    #email {
+      //       grid-column: 1;
+      //    }
+
+      //    #phone {
+      //       grid-column: -1;
+      //    }
+
+      //    #password {
+      //       grid-column: 1;
+      //    }
+
+      //    #confirm {
+      //       grid-column: -1;
+      //    }
+      // }
+   

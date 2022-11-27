@@ -5,8 +5,8 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/mainStyles.css">
+   <link type="text/css" href="/css/modern-normalize.css">
+   <link rel="stylesheet" href="/css/mainStyles.css" type="text/css">
    <title>Sign up</title>
 </head>
 
@@ -21,20 +21,20 @@
                life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
             <p class="introduction">You <em>know</em> you want to.</p>
          </div>
+         <div class="form-container">
+         <h3>Let's do this!</h3>
          <form action="#">
-            <h3>Let's do this!</h3>
-            <div class="form-container">
-               <label class="l" for="fname">FIRST NAME</label>
+               <label class="first" for="fname">FIRST NAME</label>
                <input type="text" name="fname" id="fname">
-               <label class="r" for="lname">LAST NAME</label>
+               <label class="last" for="lname">LAST NAME</label>
                <input type="text" name="lname" id="lname">
-               <label class="l" for="email">EMAIL</label>
+               <label class="mail" for="email">EMAIL</label>
                <input type="email" name="email" id="email">
-               <label class="r" for="phone">PHONE NUMBER</label>
+               <label class="tel" for="phone">PHONE NUMBER</label>
                <input type="tel" name="phone" id="phone">
-               <label class="l" for="password">Password</label>
-               <input type="password" name="password" id="password">
-               <label class="r" for="confirm">CONFIRM</label>
+               <label class="l" for="password">PASSWORD</label>
+               <input type="pass" name="password" id="password">
+               <label class="verify" for="confirm">CONFIRM</label>
                <input type="password" name="password" id="password">
             </div>
          </form>

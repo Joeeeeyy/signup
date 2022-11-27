@@ -1,12 +1,31 @@
 @import '../modern-normalize/modern-normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap");
+h3 {
+  grid-row: 1;
+}
+
+form {
+  grid-row: 2;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+form .first,
+form #fname {
+  grid-column: 1;
+}
+
 html {
   box-sizing: border-box;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  max-width: 1920px;
+  width: 1920px;
+  height: 1080px;
 }
 
 *,
@@ -41,11 +60,10 @@ body {
 #right {
   grid-column: 2;
   display: inline-grid;
-  align-items: center;
   justify-content: center;
   grid-template-rows: repeat(3, 1fr);
 }
-#right .intro {
+#right #intro {
   grid-row: 1;
   border: 1px solid #000;
 }
