@@ -22,21 +22,33 @@
             <p class="introduction">You <em>know</em> you want to.</p>
          </div>
          <div class="form-container">
-         <h3>Let's do this!</h3>
-         <form action="#">
-               <label class="first" for="fname">FIRST NAME</label>
-               <input type="text" name="fname" id="fname">
-               <label class="last" for="lname">LAST NAME</label>
-               <input type="text" name="lname" id="lname">
-               <label class="mail" for="email">EMAIL</label>
-               <input type="email" name="email" id="email">
-               <label class="tel" for="phone">PHONE NUMBER</label>
-               <input type="tel" name="phone" id="phone">
-               <label class="l" for="password">PASSWORD</label>
-               <input type="pass" name="password" id="password">
-               <label class="verify" for="confirm">CONFIRM</label>
-               <input type="password" name="password" id="password">
-            </div>
+            <h3>Let's do this!</h3>
+            <form action="#">
+               <div class="name">
+                  <label class="first" for="fname">FIRST NAME</label>
+                  <input type="text" name="fname" id="fname">
+
+                  <label class="last" for="lname">LAST NAME</label>
+                  <input type="text" name="lname" id="lname">
+               </div>
+
+
+               <div class="contact">
+                  <label class="mail" for="email">EMAIL</label>
+                  <input type="email" name="email" id="email">
+
+                  <label class="tel" for="phone">PHONE NUMBER</label>
+                  <input type="tel" name="phone" id="phone">
+               </div>
+               
+               <div class="password">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password">
+
+                  <label for="confirm">CONFIRM</label>
+                  <input type="password" name="password" id="confirm">
+               </div>
+         </div>
          </form>
          <div class="signup">
             <input type="submit" value="Create Account">
